@@ -1,4 +1,5 @@
-import heroImg from "@/assets/squarex-hero-main.jpg";
+import bannerImg from "@/assets/squarex-banner.jpg";
+import logoImg from "@/assets/squarex-logo.jpg";
 import FloatingEffects from "./FloatingEffects";
 
 const HeroSection = () => {
@@ -6,39 +7,47 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-background via-muted to-background">
       <FloatingEffects />
       
-      <div className="relative z-10 flex flex-col items-center text-center px-4 gap-6">
-        <h1 className="font-pixel text-4xl sm:text-5xl md:text-7xl text-secondary drop-shadow-[0_0_30px_hsl(45_100%_55%/0.5)] animate-slide-up">
+      <div className="relative z-10 flex flex-col items-center text-center px-4 gap-4 sm:gap-6 w-full max-w-5xl">
+        {/* Logo */}
+        <img
+          src={logoImg}
+          alt="Squarex Hero Logo"
+          className="w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 rounded-xl comic-border animate-float"
+        />
+
+        <h1 className="font-pixel text-2xl sm:text-4xl md:text-6xl lg:text-7xl text-secondary drop-shadow-[0_0_30px_hsl(45_100%_55%/0.5)] animate-slide-up leading-tight">
           SQUAREX HERO
         </h1>
-        <p className="font-comic text-2xl sm:text-3xl md:text-4xl text-primary tracking-wider animate-slide-up" style={{ animationDelay: "0.2s" }}>
+        <p className="font-comic text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary tracking-wider animate-slide-up" style={{ animationDelay: "0.2s" }}>
           WE ARE THE GUARDIANS OF LIBERTY
         </p>
 
-        <div className="relative my-4 animate-float">
+        {/* Banner */}
+        <div className="relative my-2 sm:my-4 animate-slide-up w-full" style={{ animationDelay: "0.3s" }}>
           <img
-            src={heroImg}
-            alt="Squarex Hero"
-            className="w-48 sm:w-64 md:w-80 rounded-lg comic-border"
+            src={bannerImg}
+            alt="Squarex Hero Team Banner"
+            className="w-full max-w-3xl mx-auto rounded-lg comic-border"
           />
           <div className="absolute -inset-2 bg-primary/20 rounded-lg blur-xl -z-10" />
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 animate-slide-up" style={{ animationDelay: "0.4s" }}>
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-slide-up w-full sm:w-auto" style={{ animationDelay: "0.4s" }}>
           <a
             href="#token"
-            className="font-pixel text-sm px-8 py-4 bg-secondary text-secondary-foreground rounded-lg animate-glow-pulse hover:scale-105 transition-transform"
+            className="font-pixel text-xs sm:text-sm px-6 sm:px-8 py-3 sm:py-4 bg-secondary text-secondary-foreground rounded-lg animate-glow-pulse hover:scale-105 transition-transform text-center"
           >
             BUY $SQUAREX
           </a>
           <a
             href="#social"
-            className="font-pixel text-sm px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:scale-105 transition-transform border-2 border-secondary/30"
+            className="font-pixel text-xs sm:text-sm px-6 sm:px-8 py-3 sm:py-4 bg-primary text-primary-foreground rounded-lg hover:scale-105 transition-transform border-2 border-secondary/30 text-center"
           >
             JOIN TELEGRAM
           </a>
         </div>
 
-        <p className="font-pixel text-xs text-muted-foreground mt-4 animate-slide-up" style={{ animationDelay: "0.6s" }}>
+        <p className="font-pixel text-[10px] sm:text-xs text-muted-foreground mt-2 sm:mt-4 animate-slide-up" style={{ animationDelay: "0.6s" }}>
           Enter the Squarex Universe
         </p>
       </div>

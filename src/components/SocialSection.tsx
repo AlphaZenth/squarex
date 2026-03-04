@@ -11,10 +11,12 @@ const SocialSection = () => {
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a
-            href="#"
-            className="font-pixel text-sm px-10 py-5 bg-foreground text-background rounded-lg hover:scale-110 transition-transform animate-glow-pulse flex items-center gap-3 justify-center"
+            href="https://x.com/squarexhero"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-pixel text-xs sm:text-sm px-8 sm:px-10 py-4 sm:py-5 bg-foreground text-background rounded-lg hover:scale-110 transition-transform animate-glow-pulse flex items-center gap-3 justify-center"
           >
-            <Twitter className="w-6 h-6" />
+            <Twitter className="w-5 h-5 sm:w-6 sm:h-6" />
             JOIN X
           </a>
           <a
