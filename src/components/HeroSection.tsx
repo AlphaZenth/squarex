@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { Copy, Check } from "lucide-react";
 import bannerImg from "@/assets/squarex-banner.jpg";
 import logoImg from "@/assets/squarex-logo.jpg";
 import FloatingEffects from "./FloatingEffects";
