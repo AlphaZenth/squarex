@@ -5,6 +5,15 @@ import logoImg from "@/assets/squarex-logo.jpg";
 import FloatingEffects from "./FloatingEffects";
 
 const HeroSection = () => {
+  const CA = "DHyqc1cvxRDcFtLmWMxuvG9uiQuzn8xTJc3H86YTpump";
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    await navigator.clipboard.writeText(CA);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-background via-muted to-background">
       <FloatingEffects />
