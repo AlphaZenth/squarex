@@ -39,12 +39,6 @@ const HeroSection = () => {
           >
             BUY $SQUAREX
           </a>
-          <a
-            href="#social"
-            className="font-pixel text-xs sm:text-sm px-6 sm:px-8 py-3 sm:py-4 bg-primary text-primary-foreground rounded-lg hover:scale-105 transition-transform border-2 border-secondary/30 text-center"
-          >
-            JOIN TELEGRAM
-          </a>
         </div>
 
         <div className="font-pixel text-[10px] sm:text-xs text-secondary mt-2 sm:mt-4 animate-slide-up flex flex-col items-center gap-1" style={{ animationDelay: "0.6s" }}>

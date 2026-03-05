@@ -19,14 +19,6 @@ const SocialSection = () => {
             <Twitter className="w-5 h-5 sm:w-6 sm:h-6" />
             JOIN X
           </a>
-          <a
-            href="#"
-            className="font-pixel text-sm px-10 py-5 bg-primary text-primary-foreground rounded-lg hover:scale-110 transition-transform animate-glow-pulse flex items-center gap-3 justify-center"
-            style={{ animationDelay: "1s" }}
-          >
-            <Send className="w-6 h-6" />
-            JOIN TELEGRAM
-          </a>
         </div>
       </div>
     </section>
