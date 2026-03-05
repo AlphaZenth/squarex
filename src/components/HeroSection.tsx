@@ -54,9 +54,13 @@ const HeroSection = () => {
 
         <div className="font-pixel text-[10px] sm:text-xs text-secondary mt-2 sm:mt-4 animate-slide-up flex flex-col items-center gap-1" style={{ animationDelay: "0.6s" }}>
           <span className="text-muted-foreground">Enter the Squarex Universe</span>
-          <span className="bg-card/80 border border-secondary/30 rounded-md px-4 py-2 mt-1 animate-glow-pulse">
-            $SQUAREX CA : DHyqc1cvxRDcFtLmWMxuvG9uiQuzn8xTJc3H86YTpump
-          </span>
+          <button
+            onClick={handleCopy}
+            className="bg-card/80 border border-secondary/30 rounded-md px-4 py-2 mt-1 animate-glow-pulse flex items-center gap-2 hover:bg-card transition-colors cursor-pointer"
+          >
+            <span>$SQUAREX CA : {CA}</span>
+            {copied ? <Check className="w-3 h-3 text-green-400" /> : <Copy className="w-3 h-3 text-secondary" />}
+          </button>
         </div>
       </div>
     </section>
