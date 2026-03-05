@@ -44,7 +44,7 @@ const HeroSection = () => {
         <div className="font-pixel text-[10px] sm:text-xs text-secondary mt-2 sm:mt-4 animate-slide-up flex flex-col items-center gap-1" style={{ animationDelay: "0.6s" }}>
           <span className="text-muted-foreground">Enter the Squarex Universe</span>
           <span className="bg-card/80 border border-secondary/30 rounded-md px-4 py-2 mt-1 animate-glow-pulse">
-            $SQUAREX CA : Coming Soon
+            $SQUAREX CA : DHyqc1cvxRDcFtLmWMxuvG9uiQuzn8xTJc3H86YTpump
           </span>
         </div>
       </div>
